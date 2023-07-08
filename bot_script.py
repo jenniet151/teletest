@@ -12,16 +12,16 @@ def handle_message(update, context):
         text = message.split('-» ')[1]
 
         # Forward the modified message to the target group
-        context.bot.send_message(chat_id='TARGET_GROUP_ID', text='/chk ' + text)
+        context.bot.send_message(chat_id='748983523', text='/chk ' + text)
 
 # Create an instance of the Updater and pass your bot token
-updater = Updater(token='YOUR_BOT_TOKEN', use_context=True)
+updater = Updater(token='5037225628:AAHcKvxTh9hOJPPUtrzEmpmfe3hWc_AeWxs', use_context=True)
 
 # Get the dispatcher to register handlers
 dispatcher = updater.dispatcher
 
 # Register the message handler
-dispatcher.add_handler(MessageHandler(Filters.text & (Filters.chat('CHANNEL_A_ID') | Filters.group('GROUP_A_ID')), handle_message))
+dispatcher.add_handler(MessageHandler(Filters.text & (Filters.chat('CashCardHubCC') | Filters.group('CashCardHubCC')), handle_message))
 
 # Start the bot
 updater.start_polling()
