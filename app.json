@@ -1,0 +1,14 @@
+{
+  "name": "your-repo-name",
+  "description": "Telegram bot hosted on Heroku",
+  "repository": "https://github.com/jenniet151/teletest",
+  "scripts": {
+    "start": "python bot_script.py"
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
