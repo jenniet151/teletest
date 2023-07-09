@@ -1,4 +1,4 @@
-from telegram.ext import Updater, MessageHandler, Filters.py
+from telegram.ext import Updater, MessageHandler, filters
 
 # Function to handle incoming messages
 def handle_message(update, context):
