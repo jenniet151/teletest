@@ -14,7 +14,7 @@ def handle_message(update, context):
         context.bot.send_message(chat_id='TARGET_GROUP_ID', text='/chk ' + text)
 
 # Create an instance of the Updater and pass your bot token
-updater = Updater(token='YOUR_BOT_TOKEN', use_context=True)
+updater = Updater(secret_token='YOUR_BOT_TOKEN', use_context=True)
 
 # Get the dispatcher to register handlers
 dispatcher = updater.dispatcher
