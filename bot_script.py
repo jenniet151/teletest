@@ -4,6 +4,7 @@ from telegram.ext import Updater, MessageHandler, filters
 def handle_message(update, context):
     message = update.message.text
 
+    
     # Check if the message format matches the required pattern
     if message.startswith('⚜️ᴄᴀʀᴅ -»') and '|' in message:
         # Extract the relevant portion of the message
